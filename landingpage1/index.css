@@ -38,41 +38,9 @@ header {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  margin-top: 20px;
 }
 
 .image-container img {
-  max-width: 200px;
-  height: auto;
+  max-width: 100%;
   margin: 10px;
-}
-
-@media (max-width: 768px) {
-  .container {
-    padding: 0 10px;
-  }
-
-  .container p {
-    width: 90%;
-  }
-
-  .image-container img {
-    max-width: 45%;
-  }
-}
-
-@media (max-width: 480px) {
-  .container {
-    padding: 0 5px;
-    max-width: 90%;
-    overflow: auto;
-  }
-
-  .container p {
-    width: 100%;
-  }
-
-  .image-container img {
-    max-width: 100%;
-  }
 }
