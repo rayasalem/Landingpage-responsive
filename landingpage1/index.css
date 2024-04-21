@@ -9,17 +9,18 @@ body {
 
 header {
   text-align: center;
-  margin-top: 20px; /* Adjust margin for spacing */
+  margin-top: 20px;
 }
 
 .container {
   text-align: center;
-  padding: 0 20px; /* Add padding to create space around text */
-  max-width: 600px; /* Limit maximum width of text container */
+  padding: 0 20px;
+  max-width: 600px;
 }
 
 .container p {
-  margin: 20px 0; /* Add margin to create space around text */
+  margin: 20px 0;
+  width: 100%; /* Adjust text width to fit properly with images */
 }
 
 .button1 {
@@ -38,31 +39,39 @@ header {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  margin-top: 20px; /* Add margin to create space between text and images */
+  margin-top: 20px;
 }
 
 .image-container img {
-  max-width: 200px; /* Set a fixed width */
-  height: auto; /* Maintain aspect ratio */
+  max-width: 200px;
+  height: auto;
   margin: 10px;
 }
 
 @media (max-width: 768px) {
   .container {
-    max-width: 80%; /* Adjust maximum width of text container for smaller screens */
+    max-width: 80%;
+  }
+
+  .container p {
+    width: 90%; /* Adjust text width for smaller screens */
   }
 
   .image-container img {
-    max-width: 45%; /* Adjust image size for smaller screens */
+    max-width: 45%;
   }
 }
 
 @media (max-width: 480px) {
   .container {
-    max-width: 90%; /* Allow text container to take full width on smallest screens */
+    max-width: 90%;
+  }
+
+  .container p {
+    width: 100%; /* Allow text to take full width on smallest screens */
   }
 
   .image-container img {
-    max-width: 100%; /* Allow images to take full width on smallest screens */
+    max-width: 100%;
   }
 }
