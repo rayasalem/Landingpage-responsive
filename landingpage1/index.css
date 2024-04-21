@@ -9,18 +9,17 @@ body {
 
 header {
   text-align: center;
-  margin-top: 20px; /* Adjust margin as needed */
+  margin-top: 20px; /* Adjust margin for spacing */
 }
 
 .container {
   text-align: center;
   padding: 0 20px; /* Add padding to create space around text */
+  max-width: 600px; /* Limit maximum width of text container */
 }
 
 .container p {
-  width: 100%; /* Allow text to take full width */
-  max-width: 600px; /* Limit maximum width of text */
-  margin: 20px auto; /* Add margin to create space around text */
+  margin: 20px 0; /* Add margin to create space around text */
 }
 
 .button1 {
@@ -49,8 +48,8 @@ header {
 }
 
 @media (max-width: 768px) {
-  .container p {
-    width: 80%; /* Adjust width of text container for smaller screens */
+  .container {
+    max-width: 80%; /* Adjust maximum width of text container for smaller screens */
   }
 
   .image-container img {
@@ -59,8 +58,8 @@ header {
 }
 
 @media (max-width: 480px) {
-  .container p {
-    width: 100%; /* Allow text to take full width on smallest screens */
+  .container {
+    max-width: 90%; /* Allow text container to take full width on smallest screens */
   }
 
   .image-container img {
