@@ -9,17 +9,19 @@ body {
 
 header {
   text-align: center;
-  margin: 20px;
+  margin-top: 20px;
 }
 
 .container {
   text-align: center;
-  padding: 0 20px;
+  padding: 0 20px; /* Add padding to prevent text from being hidden */
   max-width: 600px;
+  overflow: auto; /* Enable scrolling if content overflows */
 }
 
 .container p {
   margin: 20px 0;
+  width: 100%; /* Adjust text width to fit properly with images */
 }
 
 .button1 {
@@ -38,15 +40,41 @@ header {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  margin-top: 20px;
 }
 
 .image-container img {
-  max-width: 100%;
+  max-width: 200px;
+  height: auto;
   margin: 10px;
 }
 
-@media screen and (max-width: 768px) {
+@media (max-width: 768px) {
+  .container {
+    padding: 0 10px; /* Adjust padding for smaller screens */
+  }
+
   .container p {
-    width: 100%;
+    width: 90%; /* Adjust text width for smaller screens */
+  }
+
+  .image-container img {
+    max-width: 45%;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    padding: 0 5px; /* Further adjust padding for smallest screens */
+    max-width: 90%;
+    overflow: auto; /* Enable scrolling for small screens */
+  }
+
+  .container p {
+    width: 100%; /* Allow text to take full width on smallest screens */
+  }
+
+  .image-container img {
+    max-width: 100%;
   }
 }
