@@ -9,19 +9,17 @@ body {
 
 header {
   text-align: center;
-  margin-top: 20px;
+  margin: 20px;
 }
 
 .container {
   text-align: center;
-  padding: 0 20px; /* Add padding to prevent text from being hidden */
+  padding: 0 20px;
   max-width: 600px;
-  overflow: auto; /* Enable scrolling if content overflows */
 }
 
 .container p {
   margin: 20px 0;
-  width: 100%; /* Adjust text width to fit properly with images */
 }
 
 .button1 {
@@ -51,11 +49,11 @@ header {
 
 @media (max-width: 768px) {
   .container {
-    padding: 0 10px; /* Adjust padding for smaller screens */
+    padding: 0 10px;
   }
 
   .container p {
-    width: 90%; /* Adjust text width for smaller screens */
+    width: 90%;
   }
 
   .image-container img {
@@ -65,13 +63,13 @@ header {
 
 @media (max-width: 480px) {
   .container {
-    padding: 0 5px; /* Further adjust padding for smallest screens */
+    padding: 0 5px;
     max-width: 90%;
-    overflow: auto; /* Enable scrolling for small screens */
+    overflow: auto;
   }
 
   .container p {
-    width: 100%; /* Allow text to take full width on smallest screens */
+    width: 100%;
   }
 
   .image-container img {
